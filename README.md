@@ -16,7 +16,7 @@ Example of merge sort in python code:
 
 ![Merge Sort code](./images/merge%20sort.png)
 
-Efficiency / Performance: the time complexity / worst case Big O notation of this algorithm is O(nlogn). Because we are recursively dividing into subarrays, the will be a time complexity of O(logn). Then for each function call will be a time complexity of O(n). Therefore this algorithm results in a O(nlogn) time complexity. This algorithm will work well on large data sets and is the preferred process for sorting linked lists.
+Efficiency / Performance: the time complexity / worst case Big O notation of this algorithm is O(nlogn). Because we are recursively dividing into subarrays, this will be a time complexity of O(logn). Then for each function call will be a time complexity of O(n). Therefore this algorithm results in a O(nlogn) time complexity. This algorithm will work well on large data sets and is the preferred process for sorting linked lists.
 
 References:
 
@@ -43,8 +43,15 @@ Two different types of searching algorithms are:
 
 Efficiency / Performance: the time complexity / worst case Big O notation of this algorithm is O(n). If the key input value is found at the first element then the best case time complexity is O(1), but if the input value is the last element in the array then this worst case time complexity is O(n), where 'n' is the size of the array. This algorithm is preferred for small data sets and for searching unsorted arrays, lists etc.
 
-2)  Binary Search Algorithm: this search algorithim can only be applied when the data structure has been sorted. Then the technique used to find the input value is a divide and compare process until found or not. 
+2)  Binary Search Algorithm: this search algorithim can only be applied when the data structure has been sorted. Then the technique used to find the input value is a divide and compare process until found or not. The algorithm process works like this: first it looks at the value in the middle of the array, if the key input value matches = then found, but if the key input value is lower than the middle value = then must search the left half of the array, if the key input value is higher than the middle value = then must search the right half of the array, it then repeats this searching process on the chosen halved array portion to search again and repeats this again, until the input value is matched / found or not found. An image  of the alogorithm process:
 
+![Binary Search](./images/binary%20search.png)
+
+Example of binary search in python code:
+
+![Binary Search Code](./images/binary%20search%20code.png)
+
+Efficiency / Performance: the time complexity / worst case Big O notation of this algorithm is O(logn). Because we are recursively dividing into subarrays until the value is found or not, this will be a time complexity of O(logn). This algorithm is preferred for large data sets where efficiency and speed is required. Used often to search databases for specific values and can also be used for string matching in text search engines to search for a pattern in a text.
 
 References:
 
@@ -56,4 +63,12 @@ Available at: https://www.w3schools.com/dsa/dsa_algo_linearsearch.php
 
 Sharma P. 2023. Top 3 Searching Algorithms [Online]
 Available at: https://www.linkedin.com/pulse/top-3-searching-algorithms-parth-sharma
+
+W3 Schools. 2024. DSA Binary Search [Online]
+Available at: https://www.w3schools.com/dsa/dsa_algo_binarysearch.php
+
+GeekforGeeks. 2024. Binary Search Algorithm – Iterative and Recursive Implementation [Online]
+Available at: https://www.geeksforgeeks.org/binary-search/
+
+
 
